@@ -6,7 +6,33 @@
 \definecolor{wlgreen}{RGB}{48,168,87}
 
 \setbeamertemplate{background canvas}{%
-\includegraphics[width=\paperwidth,height=\paperheight]{WestLife_template.pdf}%
+\leavevmode
+\vbox to\paperheight{
+\noindent
+\vbox to 0pt{
+\hsize=.48\paperwidth
+\leavevmode
+\includegraphics[width=.4\paperwidth,height=0.6\paperheight]{wl-bg}
+\par
+\vss
+}
+%\hskip 0pt plus 1filll
+%\includegraphics[width=\paperwidth,height=\paperheight]{WestLife_template.pdf}
+\vbox to 0pt{
+\hsize=.48\paperwidth
+\begin{flushright}
+ \includegraphics[height=2em]{wl-logo}
+\end{flushright}
+\vss}
+\par
+\vskip 0pt plus 1fill
+\noindent
+\includegraphics[height=1.5em]{eu}\ 
+\includegraphics[height=1.5em]{h2020}\ 
+\includegraphics[height=1.5em]{einfra}
+\hfill
+\ 
+}
 }
 
 \setbeamertemplate{navigation symbols}{}
