@@ -1,0 +1,58 @@
+\ProvidesPackage{beamerthemewestlife}
+\ProcessOptionsBeamer
+
+
+\definecolor{wlblue}{RGB}{62,153,210}
+\definecolor{wlgreen}{RGB}{48,168,87}
+
+\setbeamertemplate{background canvas}{%
+\includegraphics[width=\paperwidth,height=\paperheight]{WestLife_template.pdf}%
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamercolor{title}{fg=black}
+\setbeamerfont{frametitle}{series=\bfseries,size=\LARGE}
+\setbeamercolor{frametitle}{fg=black}
+
+\setbeamercolor{itemize item}{fg=wlblue}
+
+\setbeamerfont{alerted text}{series=\bfseries}
+\setbeamercolor{alerted text}{fg=wlgreen!80!black}
+
+
+
+\setbeamertemplate{title page}{
+
+\vskip20pt
+\vfill\vfill
+
+\begin{flushright}
+{\usebeamerfont{title}\usebeamercolor[fg]{title} \inserttitle}\\[\medskipamount]
+% {\usebeamerfont{subtitle} \insertsubtitle}%\\[\bigskipamount]
+{\usebeamerfont{author} \insertauthor}\\[\medskipamount]
+{\usebeamerfont{date} \insertdate}
+\end{flushright}
+
+\vskip60pt
+
+\ 
+
+}
+
+\defbeamertemplate*{frametitle}{westlife}
+{
+\vskip38pt
+\vtop{
+{
+\centering
+\usebeamerfont{frametitle}{\insertframetitle}\phantom{\strut y}
+
+}
+\vfill
+}
+}
+
+
