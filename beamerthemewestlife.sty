@@ -1,6 +1,6 @@
 \ProvidesPackage{beamerthemewestlife}
 \ProcessOptionsBeamer
-
+\RequirePackage{shadowtext}
 
 \definecolor{wlblue}{RGB}{62,153,210}
 \definecolor{wlgreen}{RGB}{48,168,87}
@@ -40,10 +40,17 @@
 
 \setbeamerfont{title}{size=\LARGE,series=\bfseries}
 \setbeamercolor{title}{fg=black}
-\setbeamerfont{frametitle}{series=\bfseries,size=\LARGE}
-\setbeamercolor{frametitle}{fg=black}
+\setbeamerfont{frametitle}{series=\bfseries,size=\Large}
+\setbeamercolor{frametitle}{fg=wlblue!50!black}
 
-\setbeamercolor{itemize item}{fg=wlblue}
+\setbeamercolor{itemize item}{fg=wlblue!50!black}
+\setbeamertemplate{itemize item}{$\bullet$}
+
+\setbeamercolor{itemize subsubitem}{fg=wlblue!50!black}
+\setbeamertemplate{itemize subsubitem}{$\bullet$}
+
+\setbeamercolor{itemize subitem}{fg=wlblue!50!black}
+\setbeamertemplate{itemize subitem}{$\bullet$}
 
 \setbeamerfont{alerted text}{series=\bfseries}
 \setbeamercolor{alerted text}{fg=wlgreen!80!black}
@@ -74,7 +81,7 @@
 \vtop{
 {
 \centering
-\usebeamerfont{frametitle}{\insertframetitle}\phantom{\strut y}
+\usebeamerfont{frametitle}{\shadowtext{\insertframetitle}}\phantom{\strut y}
 
 }
 \vfill
