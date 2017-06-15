@@ -81,7 +81,8 @@
 \vtop{
 {
 \centering
-\usebeamerfont{frametitle}{\shadowtext{\insertframetitle}}\phantom{\strut y}
+% \relax => \shadowtext here
+\usebeamerfont{frametitle}{\relax{\insertframetitle}}\phantom{\strut y}
 
 }
 \vfill
